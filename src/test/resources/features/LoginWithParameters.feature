@@ -6,15 +6,13 @@ Feature:Library app login feature
 
   Background: Assuming user is on the login page
     Given user is on the login page
-@wip
+
   Scenario: Login as librarian
     When user enters "librarian13@library" username and "9rf6axdD" password
-    And clicks the singing button
     Then user should see the dashboard
     And there should be 5564 users
 
   Scenario: Login as Student
     When user enters "student11@library" username and "tScBPCUr" password
-    And clicks the singing button
     Then user should see Book Management
 

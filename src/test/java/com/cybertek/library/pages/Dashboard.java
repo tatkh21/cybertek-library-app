@@ -21,4 +21,10 @@ public class Dashboard {
 
     @FindBy(id = "user_count")
     public WebElement usersCount;
+
+    @FindBy(xpath = "//select[@name='tbl_users_length']")
+    public WebElement showRecordsDropdown;
+
+    @FindBy(xpath = "//span[.='Users']")
+    public WebElement usersLink;
 }

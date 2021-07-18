@@ -8,14 +8,10 @@ Feature:Library app login feature
     Given user is on the login page
 
   Scenario: Login as librarian
-    When user enters librarian username
-    And user enters librarian password
-    And clicks the singing button
+    When user login as Librarian
     Then user should see the dashboard
 
     Scenario: Login as Student
-      When user enters student username
-      And user enters student password
-      And clicks the singing button
+      When user login as Student
       Then user should see Book Management
 
